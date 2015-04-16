@@ -10,15 +10,5 @@
 
 @implementation ORKTaskViewController
 
-- (void)taskViewController:(ORKTaskViewController *)taskViewController
-       didFinishWithReason:(ORKTaskViewControllerFinishReason)reason
-                     error:(NSError *)error {
-    
-    ORKTaskResult *taskResult = [taskViewController result];
-    // You could do something with the result here.
-    
-    // Then, dismiss the task view controller.
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
 
 @end

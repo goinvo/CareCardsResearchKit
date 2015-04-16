@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import <ResearchKit/ORKInstructionStep.h>
 #import <ResearchKit/ORKOrderedTask.h>
-#import <ResearchKit/ORKTaskViewController.h>
 
 @interface ViewController ()
 
@@ -36,10 +35,6 @@
     ORKOrderedTask *task =
         [[ORKOrderedTask alloc] initWithIdentifier:@"task" steps:@[myStep]];
     
-    ORKTaskViewController *taskViewController =
-        [[ORKTaskViewController alloc] initWithTask:task taskRunUUID:nil];
-    taskViewController.delegate = self;
-    [self presentViewController:taskViewController animated:YES completion:nil];
 }
 
 @end
